@@ -1,0 +1,101 @@
+/* Set all parents to full height */
+html, body, 
+.container,
+.cbp-fbscroller,
+.cbp-fbscroller section { 
+	height: 100%; 
+}
+
+/* The nav is fixed on the right side  and we center it by translating it 50% 
+(we don't know it's height so we can't use the negative margin trick) */
+.cbp-fbscroller > nav {
+	position: fixed;
+	z-index: 9999;
+	right: 3px;
+	top: 50%;
+	width: 100px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.cbp-fbscroller > nav a {
+	display: block;
+	position: relative;
+	outline: none;
+}
+
+.no-touch .cbp-fbscroller > nav a:hover {
+	background: blue;
+}
+
+.cbp-fbscroller > nav a.cbp-fbcurrent {
+	background: #fff;
+}
+
+/* background-attachment does the trick */
+.cbp-fbscroller section {
+	position: relative;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.no-touch .cbp-fbscroller section {
+	background-attachment: fixed;
+}
+
+#fbsection1 {
+	/*background-image: url(../img/1.jpg);*/
+}
+
+#fbsection2 {
+	
+}
+
+#fbsection3 {
+	
+}
+
+#fbsection4 {
+	
+}
+
+#fbsection5 {
+	
+}
+
+#fbsection6 {
+	
+}
+
+#fbsection7 {
+	background-image: url(../images/5.jpg);
+}
+
+.divisiHumas{
+	margin-top: 300px; 
+}
+
+.divisiAcara{
+	margin-top: 330px; 
+}
+
+.divisiLogistik{
+	margin-top: 330px; 
+}
+
+.divisiKetertiban{
+	margin-top: 330px; 
+}
+
+.table .th .tr:nth-child(even) {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color: #dddddd;
+}
